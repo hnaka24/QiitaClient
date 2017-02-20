@@ -16,6 +16,7 @@ import org.w3c.dom.Text
 import sample.qiitaclient.*
 import sample.qiitaclient.bindView
 import sample.qiitaclient.model.Article
+import com.bumptech.glide.Glide
 
 class ArticleView : FrameLayout {
 
@@ -46,8 +47,6 @@ class ArticleView : FrameLayout {
     fun setArticle(article: Article) {
         titleTextView.text = article.title
         userNameTextView.text = article.user.name
-
-        // TODO プロフィール画像をセットする
-        profileImageView.setBackgroundColor(Color.RED)
+        Glide.with(context).load(article.user.profileImageUrl).into(profileImageView)
     }
 }
