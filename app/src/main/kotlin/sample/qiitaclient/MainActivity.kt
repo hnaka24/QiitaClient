@@ -69,11 +69,5 @@ class MainActivity : RxAppCompatActivity() {
         }
 
     }
-
-    // ダミー記事を生成するメソッド
-    private fun dummyArticle(title: String, userName: String): Article =
-            Article(id = "",
-                    title = title,
-                    url = "https://kotlinlang.org/",
-                    user = User(id = "", name = userName, profileImageUrl = ""))
+    
 }
