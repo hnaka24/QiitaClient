@@ -22,7 +22,7 @@ class MainActivity : RxAppCompatActivity() {
     val listView: ListView by bindView(R.id.list_view)
 
     val progressBar: ProgressBar by bindView(R.id.progress_bar)
-    
+
     val searchButton: Button by bindView(R.id.search_button)
 
     val queryEditText: EditText by bindView(R.id.query_edit_text)
